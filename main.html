@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lan="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Systemy operacyjne</title>
+        <meta name="description" content="Systemy operacyjne" />
+        <!-- <meta name="keyboard" content="temp" /> -->
+        <meta http-equiv="X-UA-Compatatible" content="IE=edge,chrome=1" /> <!--enables compatability for microsoft explorer -->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="./js/nav.js"></script>
+    </head>
+    <body>
+        <!-- <hr> -->
+        <div class="container">
+            <div class="wrapper">
+                <div class="sidebar">
+                    <span class="title">Wszystko </br>o systemach operacyjnych</span>
+                    <ul class="main_menu">
+                        <a onclick="FourSubOpen('four_sub_menu')">
+                        <li id="hist0" onclick="changeCont(this.id)">Historia</li>
+                        </a>
+                        <ul class="sub_menu" id="four_sub_menu">
+                        <a>
+                            <li id="hist1" onclick="changeCont(this.id)">Unix</li>
+                        </a>
+                        <a>
+                            <li id="hist2" onclick="changeCont(this.id)">Apple</li>
+                        </a>
+                        <a>
+                            <li id="hist3" onclick="changeCont(this.id)">Microsoft</li>
+                        </a>
+                        <a>
+                            <li id="hist4" onclick="changeCont(this.id)">Linux</li>
+                        </a>
+                        </ul>
+
+                        <a id="defin" onclick="changeCont(this.id)">Definicje</a>
+                        <a id="arch" onclick="changeCont(this.id)">Architektura</a>
+                        <a id="oper" onclick="changeCont(this.id)">Zadania systemu</a>
+                        <a id="manag" onclick="changeCont(this.id)">Zarządzanie zasobami</a>
+
+                        <a onclick="FourSubOpen('four_sub_menu2')">
+                        <li id="classif0">Klasyfikacja</li>
+                        </a>
+                        <ul class="sub_menu" id="four_sub_menu2">
+                            <a>
+                            <li id="classif1" onclick="changeCont(this.id)">Przetwarzanie</li>
+                            </a>
+                            <a>
+                            <li id="classif2" onclick="changeCont(this.id)">Liczba wykonywanych programów</li>
+                            </a>
+                            <a>
+                            <li id="classif3" onclick="changeCont(this.id)">Liczba użytkowników</li>
+                            </a>
+                            <a>
+                            <li id="classif4" onclick="changeCont(this.id)">Interfejs</li>
+                            </a>
+                        </ul>  
+
+                        <a id="othr" onclick="changeCont(this.id)">Inne rodzaje</a>
+                        <a id="build" onclick="changeCont(this.id)">Budowa i zasada działania</a>
+                        <a id="proc" onclick="changeCont(this.id)">Działania procesora</a>
+                        <a id="wrkLvl" onclick="changeCont(this.id)">Poziomy pracy</a>
+                        <a id="pros" onclick="changeCont(this.id)">Cechy</a>
+                    </ul>
+                </div>
+                <div class="footer">
+                    Mikołaj Wojdaszewicz</br>
+                    Marek Konkowski
+                </div>
+            </div>
+            <div class="content" id="cnt">
+                
+            </div>
+        </div>
+    </body>
+</html>
